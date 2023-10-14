@@ -1,0 +1,293 @@
+body{
+    margin: 0;
+    box-sizing: "boredr-box";
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* HEADER */
+.header{
+    width: 100%;
+    display: inline-block;
+    background-color: rgba(128, 128, 128, 0.213);
+}
+.header-text{
+    font-family: none;
+    font-size: 13px;
+    line-height: 26px;
+    text-align: center;
+    padding: 6px 0px;
+    margin: 0;
+    color: black;
+
+}
+.header-text p{
+    margin: 0;
+}
+
+.header-text p a{
+    display: inline-block;
+    font-size: 100%;
+    color: black;
+}
+
+
+/* NAVBAR */
+.nav-pk{
+    width: 100%;
+    height: 95px;
+    background-color: #fff;
+}
+
+/* NAVBAR CONTAINER */
+
+.container{
+    width: 98%;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* NAVBAR LOGO - LEFT SIDE */
+.navbar-brand{
+    width: 20%;
+    justify-content: flex-start;
+    align-items: center;
+}
+.navbar-brand img{
+    width:27%;
+    margin-left: 20px;
+    margin-top: -2px;
+}
+
+/* NAVBAR CENTER BUTTONS */
+
+.navbar-buttons{
+    width: 50%;
+    position: relative;
+    font: 15px Arial,helvetica,Helvetica,sans-serif ;
+}
+.navbar-buttons-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-buttons-list li{
+    color: black;
+    padding: 0px 15px;
+    list-style: none;
+}
+
+.navbar-buttons-list li a{
+    text-decoration: none;
+    color: black;
+    
+}
+.navbar-buttons-list li:active{
+    font-weight: bold;
+}
+.navbar-buttons-list li a:hover{
+    border-bottom: 2px solid;
+}
+
+/* NAVBAR BUTTON WINTER COLLECTION */
+.wc-dropdown{
+    box-shadow: #2d2b2a;
+}
+.wc-row{
+    position: absolute;
+    display: none;
+}
+.wc-row img{
+    padding: 0 5px;
+}
+.wc-column div{
+    padding-bottom: 10px;
+}
+.wc-column:hover span{
+    border-bottom: 2px solid;
+    font-weight: bold;
+}
+.wc-manu:hover .wc-row{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 230px;
+    text-align: center;
+    z-index: 101;
+    margin: 2px -100px;
+    padding: 10px;
+}
+
+/* NAVBAR FABRIC BUTTON */
+
+.fabric-container{
+    position: relative;
+    display: none;
+    
+}
+
+.fabric-manu:hover .fabric-container{
+    background-color: white;
+    width: max-content;
+    z-index: 11;
+    display: flex;
+    position: absolute;
+    line-height: 35px;
+    font-size: 14px;
+    margin: 2px -250px;
+    justify-content: space-between;
+}
+.fabric-column ul{
+    padding: 0;
+    margin-top: 13px;
+    max-width: 100%;
+}
+
+.fabric-column ul li a{
+    color: #2d2b2ad3;
+}
+.fabric-column4{      
+    padding: 25px 2px;
+}
+.fabric-column4 img{
+    width: 200px;
+    height: 200px;
+    overflow: hidden    ;
+}
+
+
+
+
+
+
+/* NAVBAR BUTTON SALES */
+
+.sale-menu{
+    position: relative;
+}
+#sale-images{
+    position: absolute;
+    display: none;
+    
+}
+#sale-images a{
+    padding: 0  5px; 
+    border: none !important;
+
+}
+
+#sale-images a:hover span{
+    border-bottom: 2px solid ;
+}
+
+.sale-menu:hover #sale-images{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 230px;
+    text-align: center;
+    z-index: 101;
+    margin: 2px -750px;
+    padding: 10px;
+    box-shadow: rgb(0, 0, 0)000;
+}
+
+
+/* NAVBAR ICON SEARCH */
+
+.search-box {
+    position: relative;
+    display: none;
+}
+
+.search:active{ 
+    position: absolute;
+    display: block;
+}
+
+.icon {
+    cursor: pointer;
+}
+.nav-icons{
+    display: flex;
+    width: 20%;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+.icon img{
+    padding: 0px 12px;
+    width: 25px;
+    height: 25px;
+
+}
+
+.truck::after{
+    content: 'Track';
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    color: #2d2b2a;
+    text-transform: capitalize;
+}
+.search::after{
+    content: 'Search';
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    color: #2d2b2a;
+    text-transform: capitalize;
+ 
+}
+.user::after{
+    content: 'Account';
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    color: #2d2b2a;
+    text-transform: capitalize;
+}
+.cart::after{
+    content: 'Bag';
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    color: #2d2b2a;
+    text-transform: capitalize;
+}
+
+
+
+.user {
+    position: relative;
+    display: inline-block;
+}
+
+.select-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+.user:hover .select-dropdown {
+    display: block;
+    border: none;
+    
+}
+main{
+    width: 100%;
+    position: relative;
+}
+.main-img img{
+    display: block;
+    position: absolute;
+    max-width: -webkit-fill-available;
+}
+
+
+
