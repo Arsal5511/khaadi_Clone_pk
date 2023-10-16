@@ -119,6 +119,7 @@ body{
     z-index: 101;
     margin: 2px -100px;
     padding: 10px;
+    border: 0.5px solid rgba(128, 128, 128, 0.375);
 }
 
 /* NAVBAR FABRIC BUTTON */
@@ -139,6 +140,7 @@ body{
     font-size: 14px;
     margin: 2px -250px;
     justify-content: space-between;
+    border: 0.5px solid rgba(128, 128, 128, 0.375);
 }
 .fabric-column ul{
     padding: 0;
@@ -193,7 +195,7 @@ body{
     z-index: 101;
     margin: 2px -750px;
     padding: 10px;
-    box-shadow: rgb(0, 0, 0)000;
+    border: 0.5px solid rgba(128, 128, 128, 0.375);
 }
 
 
@@ -279,15 +281,96 @@ body{
     border: none;
     
 }
-main{
+
+.section a img{
     width: 100%;
-    position: relative;
+    height: 80vh;
 }
-.main-img img{
-    display: block;
-    position: absolute;
-    max-width: -webkit-fill-available;
+
+
+.section2 {
+    height: 80vh;
+    display: inline-block;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.image {
+    margin: 5px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+.section3 {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+}
+
+.left {
+    width: 50%;
+}
+
+.left img {
+    width: 100%;
+}
+
+.right {
+    width: 50%;
+}
+
+.cards{
+    padding: 10% 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.card{
+    padding: 20px 2px;
+    /* margin: 2px; */
+}
+.card a{
+    text-decoration: none;
+    color: #2d2b2a;
+    line-height: 1px;
+    font-size: large;
+    font-weight: lighter;
+    text-align: justify;
+}
+
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card button {
+    margin:0 auto;
+    top: 0;
+    width: 100%;
+    line-height: 30px;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+
+
 
 
 
