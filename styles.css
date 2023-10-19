@@ -8,7 +8,7 @@ body{
 }
 
                                                 /* HEADER */
-/* HEADER */
+
 .header{
     width: 100%;
     display: inline-block;
@@ -40,70 +40,61 @@ body{
     top: 0;
     position: sticky;
     width: 100%;
-    height: 95px;
-    background-color: #fff;
 }
 
 /* NAVBAR CONTAINER */
 
 .container{
-    width: 98%;
-    height: inherit;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
 }
 
 /* NAVBAR LOGO - LEFT SIDE */
-.navbar-brand{
-    width: 20%;
-    justify-content: flex-start;
-    align-items: center;
-}
-.navbar-brand img{
-    width:27%;
-    margin-left: 20px;
-    margin-top: -2px;
+
+.navbar-brand a img{
+    width: 100%;
 }
 
 /* NAVBAR CENTER BUTTONS */
-
-.navbar-buttons{
-    width: 50%;
-    position: relative;
-    font: 15px Arial,helvetica,Helvetica,sans-serif ;
-}
 .navbar-buttons-list{
     display: flex;
+    gap: 23px;
     justify-content: center;
     align-items: center;
 }
 
 .navbar-buttons-list li{
-    color: black;
-    padding: 0px 15px;
+    font: 15px Arial,helvetica,Helvetica,sans-serif ;
     list-style: none;
 }
 
 .navbar-buttons-list li a{
-    text-decoration: none;
     color: black;
-    
+    text-decoration: none;
 }
-.navbar-buttons-list li:active{
-    font-weight: bold;
-}
+
 .navbar-buttons-list li a:hover{
-    border-bottom: 2px solid;
+    border-bottom: 1px solid;
 }
 
 /* NAVBAR BUTTON WINTER COLLECTION */
-.wc-dropdown{
-    box-shadow: #2d2b2a;
-}
 .wc-row{
-    position: absolute;
+    position: relative;
     display: none;
+    height: 230px;
+    text-align: center;
+    margin: 2px -100px;
+    padding: 10px;
+    border: 0.5px solid rgba(128, 128, 128, 0.375);
+    background-color: #fff;
+}
+.wc-manu:hover .wc-row{
+    display: flex;
+    position: absolute;
 }
 .wc-row img{
     padding: 0 5px;
@@ -115,21 +106,8 @@ body{
     border-bottom: 2px solid;
     font-weight: bold;
 }
-.wc-manu:hover .wc-row{
-    background-color: #fff;
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    height: 230px;
-    text-align: center;
-    z-index: 101;
-    margin: 2px -100px;
-    padding: 10px;
-    border: 0.5px solid rgba(128, 128, 128, 0.375);
-}
 
 /* NAVBAR FABRIC BUTTON */
-
 .fabric-container{
     position: relative;
     display: none;
@@ -138,21 +116,23 @@ body{
 
 .fabric-manu:hover .fabric-container{
     background-color: white;
-    width: max-content;
-    z-index: 11;
     display: flex;
     position: absolute;
-    line-height: 35px;
-    font-size: 14px;
-    margin: 2px -250px;
-    justify-content: space-between;
-    border: 0.5px solid rgba(128, 128, 128, 0.375);
+    margin: 1px -250px;
+}
+.fabric-column{
+    padding: 10px 14px;
 }
 .fabric-column ul{
     padding: 0;
     margin-top: 13px;
     max-width: 100%;
 }
+.fabric-column ul li{
+    line-height: 2;
+    font-size: 14px;
+}
+
 
 .fabric-column ul li a{
     color: #2d2b2ad3;
@@ -163,8 +143,9 @@ body{
 .fabric-column4 img{
     width: 200px;
     height: 200px;
-    overflow: hidden    ;
 }
+
+
 
 
 
@@ -205,94 +186,51 @@ body{
 }
 
 
-                                                /* NAVBAR ICON SEARCH */
+                                         /* NAVBAR ICON SEARCH */
 
-.search-box {
-    position: relative;
-    display: none;
-}
+    .icons{
+        gap: 20px;
+        display: flex;
+    }
+    .icons div{
+        width: 50px;
+    }
+    .icons img{
+        width: 35px;
+        height: 35px;
+        padding-left: 4px;
+    }
+    #truck::after{
+        content: 'Track';
+        display: block;
+        font-size: 10px;
+        text-align: center;
+    }
+    #search::after{
+        content: 'Search';
+        display: block;
+        font-size: 10px;
+        text-align: center;
+    }
+    #user::after{
+        content: 'Account';
+        display: block;
+        font-size: 10px;
+        text-align: center;
 
-.search:active{ 
-    position: absolute;
-    display: block;
-}
-
-.icon {
-    cursor: pointer;
-}
-.nav-icons{
-    display: flex;
-    width: 20%;
-    justify-content: flex-end;
-    text-decoration: none;
-}
-
-.icon img{
-    padding: 0px 12px;
-    width: 25px;
-    height: 25px;
-
-}
-
-.truck::after{
-    content: 'Track';
-    display: block;
-    font-size: 12px;
-    text-align: center;
-    color: #2d2b2a;
-    text-transform: capitalize;
-}
-.search::after{
-    content: 'Search';
-    display: block;
-    font-size: 12px;
-    text-align: center;
-    color: #2d2b2a;
-    text-transform: capitalize;
- 
-}
-
-                                                    /* USER  */
-.user::after{
-    content: 'Account';
-    display: block;
-    font-size: 12px;
-    text-align: center;
-    color: #2d2b2a;
-    text-transform: capitalize;
-}
-.cart::after{
-    content: 'Bag';
-    display: block;
-    font-size: 12px;
-    text-align: center;
-    color: #2d2b2a;
-    text-transform: capitalize;
-}
-
-
-
-.user {
-    position: relative;
-    display: inline-block;
-}
-
-.select-dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    display: none;
-}
-
-.user:hover .select-dropdown {
-    display: block;
-    border: none;
+    }
+    #bag::after{
+        content: 'Bag';
+        display: block;
+        font-size: 10px;
+        text-align: center;
+    }
     
-}
+    
+
                                             /* MAIN SECTION  */
 .section a img{
     width: 100%;
-    height: 80vh;
 }
 
                                                 /* GRID SECTION  */
@@ -326,49 +264,49 @@ body{
 
 .section-multi {
     display: flex;
+    align-items: center;
     justify-content: center;
-    height: 80vh;
+}
+.section-container{
+    display: flex;
 }
 
 .left {
-    width: 50%;
+    flex: 1;
 }
 
 .left img {
     width: 100%;
+    height: 100%;
 }
 
 .right {
-    width: 50%;
-}
-
-.cards{
-    padding: 10% 20%;
+    flex: 1;
     display: flex;
-    align-items: center;
-    justify-content: center;
-
+    flex-direction: column;
+}
+.card-title{
+    margin-left: 15%;
+    font-size: 1.5rem;
+}
+.cards{
+    display: flex;
+    padding: 2px 20%;
 }
 .card{
-    padding: 20px 2px;
-    /* margin: 2px; */
+    padding:20px 2px ;
 }
 .card a{
     text-decoration: none;
-    color: #2d2b2a;
-    line-height: 1px;
+    color: #2d2b2a96;
     text-align: justify;
 }
 .card a p{
     font-size: small;
 }
-
-
 .card img {
     width: 100%;
-    height: auto;
 }
-
 .card button{
     text-decoration: none;
     border: none;
@@ -411,32 +349,33 @@ body{
 .ft-image{
     text-decoration: none;
     padding: 3px;
-    /* z-index: 11; */
     justify-content: space-between;
     display: inline-flex;
 }
 .ft-image img{
-    width: fit-content;
-    height: 35px;
-    margin: 0 10px;
+    margin-right:15px;
     padding: 0;
     
     
 }
 .text-area{
+    display: inline-block;
+    font-style: normal;
     color: #2d2b2a;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-top: -15px;
-    line-height: 0.2;
+
+}
+.text-area h3{
+    margin: 0;
 }
 .text-area p{
+    margin: 0;
     font-size: small;
     color: #2d2b2aab;
 }
                                             /* FOOTER-INNER-TOP  */
 
 .footer-inner-top{
-    height: 30%;
     width: 90%;
     margin: auto;
     display: flex;
@@ -544,7 +483,7 @@ body{
 
                                                             /* FOOTER MIDDLE  */
 .footer-middle{
-    height: 40%;
+    display: inline-block;
     width: 90%;
     margin: auto;
     display: flex;
@@ -584,5 +523,10 @@ body{
 .copyright-text{
     color: #2d2b2ab0;
 }
+
+
+/* MEDIAL QUIRIES */
+
+
 
 
