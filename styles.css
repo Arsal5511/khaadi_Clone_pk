@@ -529,10 +529,6 @@ body{
 
 @media screen and (max-width: 1000px) {
 
-    body{
-        background-color: red;
-    }
-
     .container{
         flex-direction: column;
         max-height: fit-content;
