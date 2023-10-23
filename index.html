@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/styles.css" />
     <title>Khaadi - Pakistani Fashion | Shop</title>
   </head>
@@ -11,7 +12,7 @@
                                             <!-- HEADER -->
     <header class="header">
         <div class="header-text">
-            <p >
+            <p>
                 Wrap yourself in prints and colors fo winter with warm Fabrics. The print story is available.
                 <a href="#"><strong>Shop Now.</strong></a>
             </p>
@@ -89,7 +90,7 @@
                         <ul>
                             <li><a href=""><strong style="color: black;">By Collection</strong></a></li>
                             <li><a href="">The Print Story <sup style="color: red;">New</sup></a></li>
-                            <li><a href="">The Fall Edit <sup style="color: red;">New</sup></a></li>
+                            <li><a href="https://www.facebook.com"  target="_blank">The Fall Edit <sup style="color: red;">New</sup></a></li>
                             <li><a href="">The Formal Edit <sup style="color: red;">New</sup></a></li>
                             <li><a href="">My summer Picnic</a></li>
                             <li><a href="">The Sister Wars</a></li>
@@ -267,6 +268,103 @@
     
           </div>
     </nav>
+
+    <!-- MOBILE NAVBAR -->
+
+
+  <div class="mobile-nav">
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="sidenav-link">
+        <button class="dropdown-btn">Winter Collection 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">Fabrics</a>
+          <a href="#">Ready To Wear</a>
+        </div>
+      </div>
+      <div class="sidenav-link">
+        <button class="dropdown-btn">New In 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">Fabrics</a>
+          <a href="#">Ready To Wear</a>
+          <a href="#">Western</a>
+        </div>
+      </div>
+      <div class="sidenav-link">
+        <button class="dropdown-btn">Fabrics 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <p>By Collection
+            <a href="#">The Print Story</a>
+            <a href="#">The Fall Edit </a>
+            <a href="#">The Formal Edit</a>
+            <a href="#">My Summer Picnic</a>
+            <a href="#">The Sister Wars</a>
+          </p>
+          <p>3 Piece Fabrics
+            <a href="#">Khaas Full Suit</a>
+            <a href="#">Printed Full Suit</a>
+            <a href="#">Emboridered Full Suit</a>
+          </p>
+          <p>2 Piece Fabrics
+            <a href="#">Emboridered Top Dupatta</a>
+            <a href="#">Top Bottoms</a>
+            <a href="#">Printed Top Dupatta</a>
+            <a href="#">Printed Top Bottoms</a>
+          </p>
+        </div>
+      </div>
+      <div class="sidenav-link">
+        <button class="dropdown-btn">Ready To Wear 
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="sidenav-link">
+        <button class="dropdown-btn">Western
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+      <div class="sidenav-link">
+        <button class="dropdown-btn">Sale
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-container">
+          <a href="#">Further-Reduction</a>
+          <a href="#">Flat 70</a>
+          <a href="#">Flat 50</a>
+          <a href="#">Flat 40</a>
+        </div>
+      </div>
+ 
+    </div>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+    <img src="/images/Nav-icons/logo.svg" alt="Logo" class="logo">
+    <div class="icons">
+        <img src="/images/Nav-icons/search.svg" alt="Icon 1" class="icon">
+        <img src="/images/Nav-icons/shopping.svg" alt="Icon 2" class="icon">
+    </div>
+
+  </div>
+    
+
+
 
                           <!-- SECTION1 -->
     <div class="section">
@@ -494,7 +592,7 @@
             <div class="block">
               <div class="social-links">
                 <a href="#"><img src="/images/social-icons/facebook.png" alt="facebook icon"></a>
-                <a href="#"><img src="/images/social-icons/instagram_icon.png" alt="instagram_icon"></a>
+                <a href="https://www.instagram.com/arsal_5511"  target="_blank"><img src="/images/social-icons/instagram_icon.png" alt="instagram_icon"></a>
                 <a href="#"><img src="/images/social-icons/twitter.png" alt="twitter icon"></a>
                 <a href="#"><img src="/images/social-icons/youtube.png" alt="youtube icon"></a>
               </div>
@@ -612,6 +710,35 @@
       </div>
 
 
+
+
+      
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+      }
+      
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+      </script>
+      <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        
+        for (i = 0; i < dropdown.length; i++) {
+          dropdown[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+              dropdownContent.style.display = "none";
+            } else {
+              dropdownContent.style.display = "block";
+            }
+          });
+        }
+        </script>
 
     </div>
   </body>

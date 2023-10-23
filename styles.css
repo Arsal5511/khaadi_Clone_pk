@@ -53,6 +53,79 @@ body{
     color: rgb(0, 0, 0);
 }
 
+/* MOBILE NAVBAR  */
+.mobile-nav{
+    display: none ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sidenav{
+    height: 100%;
+    width: 100%;
+    margin-right: 10%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    text-decoration: none;
+    color: #000000c8;
+  }
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+/* Style the sidenav links and the dropdown button */
+.sidenav-link a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000a5;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }  
+
+  .dropdown-container {
+    display: none;
+    background-color: #ffffff;
+    padding-left: 8px;
+}
+.dropdown-container a{
+    font-size: 14px;
+}
+.dropdown-container a:hover{
+    font-weight: bold;
+}
+  .dropdown-container p{
+    font-size: 12px;
+  }
+  .dropdown-container p a{
+    font: 10px;
+    font-weight: lighter;
+  }
+  
+  /* Optional: Style the caret down icon */
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+
 /* NAVBAR LOGO - LEFT SIDE */
 
 .navbar-brand a img{
@@ -375,6 +448,7 @@ body{
 
 .footer-inner-top{
     width: 90%;
+    /* position: relative; */
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -382,6 +456,7 @@ body{
 }
 .footer-container{
     flex: 1;
+    /* position: absolute; */
 }
 .block-title{
     padding-top: 34px;
@@ -440,6 +515,7 @@ body{
     text-transform: uppercase;
     padding: 0 22px;
     width: 60vh;
+    overflow: auto;
 
 }
 
@@ -527,11 +603,20 @@ body{
 /* MEDIAL QUIRIES */
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) {
 
     .container{
-        flex-direction: column;
+        flex-direction: row;
         max-height: fit-content;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mobile-nav{
+        display: flex;
+    }
+
+    .nav-pk{
+        display: none;
     }
 
     .section2 .row{
@@ -546,17 +631,35 @@ body{
         flex-wrap: wrap;
         display: inline-block;
     }
-
     .footer-top{
         align-items: center;
-        justify-content: center;
-
+        justify-content: left;
+        margin-left: 220px;
+    }
+    .ft-image{
+        padding-top: 25px;
+    }
+    .ft-image p{
+        flex-wrap: wrap;
+        margin: 3px 15px;
     }
     .block{
         flex-direction: column;
         display: flex;
         margin: auto;
         justify-content: center;
+    }
+    .mail-box{
+        flex-basis: 50%;
+        width: 100%;
+        justify-content: lef;
+        margin-top: 40px;
+    }
+    .mail-box-area{
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        width: 270px;
     }
     .social-links{
         justify-content: center;
@@ -599,6 +702,30 @@ body{
         flex-wrap:wrap;
         justify-content: center;
         align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .footer-top{
+        align-items: center;
+        justify-content: left;
+        margin-left: 70px;
+    }
+
+}
+@media screen and (max-width: 375px) {
+    .mail-box-area{
+        width: 200px;
+    }
+    .mail-box-button{
+        padding: 0;
+    }
+    .email-input{
+        padding: 0;
+    }
+    .mail-icon {
+        width: 102px;
     }
 
 }

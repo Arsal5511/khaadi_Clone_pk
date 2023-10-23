@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <style>
+      /* .container{
+        display: flex;
+        justify-content: space-between;
+      }
+      .sidebar{
+        display: none;
+        border: 1px solid grey;
+        margin-right: 10%;
+      }
+      .sidebar:target{
+        display: flex;
+      }
+        summary {
+            cursor: pointer;
+        }
+        summary::after{
+          content: "";
+          border-bottom: 2px solid grey;
+        }
+
+        details > summary::marker {
+            content: "";
+        }
+
+        .answer {
+            margin-top: 10px;
+            margin-left: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .dd{
+          display: flex;
+          flex-direction: column;
+        }
+        
+        .dd a{
+          
+          text-decoration: none;
+          color: #777;
+          line-height: 2em;
+
+        }
+
+        .dd p{
+          background-image: url();
+        }
+
+
+
+
+
+
+        .hidden-div {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+
+        .hidden-div:target {
+            display: block;
+        }
+
+        .show-div-button {
+            text-decoration: none;
+            color: blue;
+            cursor: pointer;
+        }
+
+        .show-div-button:hover {
+            text-decoration: underline;
+        }
+ */
+
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+  <div class="container">
+    <a href="#side-navbar" class="sidebar-button">&#9776;
+
+
+      <div id="side-navbar" class="sidebar">
+        <details>
+            <summary>Winter Collection</summary>
+            <div class="answer">
+              <div class="dd">
+                <a href="#">Fabric</a>
+                <a href="#">Ready To Wear</a>
+              </div>
+              <p></p>
+            </div>
+        </details>
+    
+        <details>
+            <summary>New In</summary>
+            <div class="answer">
+              <div class="dd">
+                <a href="#">Fabric</a>
+                <a href="#">Ready To Wear</a>
+              </div>
+              <p></p>
+            </div>
+        </details>
+    
+        <details>
+            <summary>Fabrics</summary>
+            <div class="answer">
+              <div class="dd">
+                <a href="#">Fabric</a>
+                <a href="#">Ready To Wear</a>
+              </div>
+              <p></p>
+            </div>
+        </details>
+    
+        <details>
+            <summary>Ready To Wear</summary>
+            <div class="answer">
+              <div class="dd">
+                <a href="#">Fabric</a>
+                <a href="#">Ready To Wear</a>
+              </div>
+              <p></p>
+            </div>
+        </details>
+    
+        <details>
+            <summary>Sale</summary>
+            <div class="answer">
+              <div class="dd">
+                <a href="#">Fabric</a>
+                <a href="#">Ready To Wear</a>
+              </div>
+              <p></p>
+            </div>
+        </details>
+      </div>
+
+
+
+    </a>
+    <img src="logo.png" alt="Logo" class="logo">
+    <div class="icons">
+        <img src="icon1.png" alt="Icon 1" class="icon">
+        <img src="icon2.png" alt="Icon 2" class="icon">
+    </div>
+</div>
+
+
+
+
+
+<!-- <a href="#hiddenDiv" class="show-div-button">Click Me</a>
+
+<!-- Hidden div that will be displayed when the anchor tag is clicked -->
+<div class="hidden-div" id="hiddenDiv">
+    This is the hidden div content. It will be shown when you click the anchor tag above.
+</div> -->
+
+<hr><hr><hr>
+
+<div class="sidenav">
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#clients">Clients</a>
+  <a href="#contact">Contact</a>
+  <button class="dropdown-btn">Dropdown
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  <a href="#contact">Search</a>
+</div>
+
+
+
+
+  
+</body>
+
+</html>
+
+
